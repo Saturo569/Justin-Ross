@@ -136,6 +136,7 @@ html{
     font-style: italic;
     color: #B8860B;
     transition: 0.3s ease;
+    -webkit-text-stroke:2px #1B1C1F;
 }
 
 .justin:hover{
@@ -230,13 +231,17 @@ html{
     gap: 48px;
 }
 
+.about-text{
+    padding: 20px 24px;
+    background-color: rgba(10, 10, 12, 0.78);
+    border: 1px solid rgba(176, 183, 195, 0.18);
+    border-left: 3px solid #C62828;           
+    border-radius: 10px;
+    backdrop-filter: blur(4px);     
+}
 .about-text h1{
     font-style: italic;
 }
-
-
-
-
 
 
 .picture{
@@ -253,7 +258,7 @@ html{
 
 .about-text p{
     font-size: clamp(16px, 1.5vw, 20px);
-    color:#cfd1d4;;
+    color: #ECEFF4;
     line-height: 2;
 }
 
@@ -296,21 +301,18 @@ html{
 
 .skills{
     height: 100vh;
-    padding: 10px;
     margin-left: 220px;
+    padding: 40px;
     background-color: #2B2D31;
 }
 
-/* ---------- skills ---------- */
-.skills{
-    padding: 40px;
-}
 
 .skills h1{
     font-size: clamp(32px, 4vw, 56px);
     font-style: italic;
     color: #B8860B;
     margin-bottom: 24px;
+    -webkit-text-stroke:2px #1B1C1F;
 }
 
 .skills-ni-ross{
@@ -365,6 +367,12 @@ html{
     .skills{
         padding: 30px 20px;
     }
+
+     .about-text{
+        padding: 18px;
+        border-left: 1px solid rgba(176, 183, 195, 0.18);
+        border-top: 3px solid #C62828;
+    }
 }
 
 
@@ -374,16 +382,6 @@ html{
         max-width: 300px;
     }
 }
-
-/* ---- Wide screens ---- */
-@media (min-width: 1400px){
-    .frame{ max-width: 480px; }
-}
-
-@media (min-width: 2000px){
-    .frame{ max-width: 640px; }
-}
-
 
 
 
@@ -466,16 +464,25 @@ html{
         gap: 18px;
     }
 
-    .picture{
-        width: 70%;
-        max-width: 150px;
-        border-radius: 50%;
-        border: 8px solid #B8860B;
-    }
+   
 }
 
 
 /*  LARGER SCREENS */
+
+@media (min-width: 1024px){
+    .about{
+        padding: 30px;
+    }
+}
+
+@media (min-width: 1400px){
+    .frame{ max-width: 480px; }
+}
+
+@media (min-width: 2000px){
+    .frame{ max-width: 640px; }
+}
 
 
 @media (min-width: 1400px){

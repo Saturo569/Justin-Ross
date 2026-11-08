@@ -7,7 +7,6 @@ function Skills(){
       <h1>Skills</h1>
 
       <div className="skills-ni-ross">
-        <h2>Tech stack focused</h2>
 
         <div className="skill-group">
           <h3><i class="fa-solid fa-desktop"></i> Web development</h3>
@@ -22,6 +21,7 @@ function Skills(){
           <h3><i class="fa-solid fa-gamepad"></i> Game development</h3>
           <div className="skill-list">
             <span className="skill-chip">C#</span>
+            <span className="skill-chip">Canva (for basic ui)</span>
           </div>
         </div>
 

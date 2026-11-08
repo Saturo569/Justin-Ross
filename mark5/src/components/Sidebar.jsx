@@ -21,7 +21,7 @@ function Sidebar(){
             <aside className={menuOpen ? 'sidebar open' : 'sidebar'}>
                 <div className="header-part">
                     <span className="logo">
-                        <a href="#home" onClick={() => menuOpen(false)}>Justin Ross</a>
+                        <a href="#home" onClick={() => setOpen(false)}>Justin Ross</a>
                     </span>
 
                     <button

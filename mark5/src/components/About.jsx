@@ -20,7 +20,7 @@ function About(){
                             <p>Right now, my skills aren't that great yet, but I'm willing to learn, especially when it comes to web development and game development.</p>
                             <br />
                             <p>My focus tech stack right now: 
-                            <br /><span style={{color: 'orange'}}><i class="fa-brands fa-html5"></i></span> html,<span style={{color: 'blue'}}><i class="fa-brands fa-css3-alt"></i></span> css, and <span style={{color: 'yellow'}}><i class="fa-brands fa-js"></i></span> javascript for  <span style={{fontSize: '16px', backgroundColor: 'gray', color: 'black', padding: '4px', borderRadius: '24px'}}><i class="fa-solid fa-desktop"></i></span> web development.</p>
+                            <br /><span style={{color: 'orange'}}><i class="fa-brands fa-html5"></i></span> html,<span style={{color: 'skyblue'}}><i class="fa-brands fa-css3-alt"></i></span> css, and <span style={{color: 'yellow'}}><i class="fa-brands fa-js"></i></span> javascript for  <span style={{fontSize: '16px', backgroundColor: 'gray', color: 'black', padding: '4px', borderRadius: '24px'}}><i class="fa-solid fa-desktop"></i></span> web development.</p>
                             <p>C# for game development.</p>
                             
                         </div>
