@@ -119,6 +119,54 @@ html{
     
 }
 
+/* Spotibai */
+.music{
+    margin-top: 16px;
+    padding: 0 10px;
+}
+
+.music h1{
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #babdc5;
+    margin-bottom: 10px;
+}
+
+.music h2{
+    color: #babdc5;
+}
+
+.song-lists{
+    max-height: 400px;
+    overflow-y: auto;
+    color-scheme: dark;      
+}
+.song-lists > div{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px 0;
+    border-bottom: 1px solid #3a3c41;
+}
+
+.song-lists span{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #cfd1d4;
+    transition: 0.3s ease;
+}
+
+.song-lists > div:hover span{
+    color: #ECEFF4;
+}
+
+.song-lists audio{
+    width: 100%;
+    height: 40px;
+}
+
 .home{
     display: flex;
     justify-content: space-between;
@@ -233,7 +281,7 @@ html{
 
 .about-text{
     padding: 20px 24px;
-    background-color: rgba(10, 10, 12, 0.78);
+    background-color: rgba(13, 13, 15, 0.78);
     border: 1px solid rgba(176, 183, 195, 0.18);
     border-left: 3px solid #C62828;           
     border-radius: 10px;
@@ -254,6 +302,7 @@ html{
     font-size: clamp(32px, 4vw, 56px);
     color: #B8860B;
     margin-bottom: 20px;
+    -webkit-text-stroke:1px #1B1C1F;
 }
 
 .about-text p{
@@ -284,6 +333,7 @@ html{
 .info strong{
      font-size: clamp(18px, 2vw, 26px);
     color: #B8860B;
+    
 }
 
 .info span{
@@ -311,22 +361,20 @@ html{
     font-size: clamp(32px, 4vw, 56px);
     font-style: italic;
     color: #B8860B;
+    transition: 0.3s ease;
     margin-bottom: 24px;
     -webkit-text-stroke:2px #1B1C1F;
+}
+
+.skills h1:hover{
+    color: #FFC107;
 }
 
 .skills-ni-ross{
     max-width: 900px;
 }
 
-.skills-ni-ross h2{
-    font-size: clamp(18px, 2vw, 26px);
-    color: #FFC107;
-    letter-spacing: 2px;
-    padding-bottom: 12px;
-    margin-bottom: 24px;
-    border-bottom: 1px solid #3a3c41;
-}
+
 
 .skill-group{
     margin-bottom: 28px;
@@ -506,7 +554,7 @@ html{
         padding: 14px 0;
     }
 
-    /* Sections move over by the new sidebar width */
+    
     .home, .about, .projects, .skills{
         margin-left: 260px;
     }

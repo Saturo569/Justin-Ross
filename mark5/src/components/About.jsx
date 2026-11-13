@@ -3,8 +3,8 @@ import hand from '../assets/hand.png';
 
 const infos = [
     {value: 'BSIT', label: 'COURSE'},
-    {value: '2nd Year', label: 'LEVEL'},
-    {value: 'CvSU', label: 'SCHOOL'}
+    {value: '2nd Year (Current)', label: 'LEVEL'},
+    {value: 'Cavite State University (CvSU)', label: 'SCHOOL'}
 ]
 function About(){
     return(

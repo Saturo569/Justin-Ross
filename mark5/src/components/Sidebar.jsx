@@ -1,11 +1,11 @@
 import {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faXmark, faBars, faHouse, faCircleInfo, faFolder, faCode, faUser} from '@fortawesome/free-solid-svg-icons';
+import {faXmark, faBars, faCircleInfo, faFolder, faCode} from '@fortawesome/free-solid-svg-icons';
 
 
 
 const links = [
-    {href: '#home', label: 'Home', icon: faHouse},
+    
     {href: '#about', label: 'About me', icon: faCircleInfo},
     {href: '#projects', label: 'Projects', icon: faFolder},
     {href: '#skills', label: 'Skills', icon: faCode},
@@ -16,6 +16,16 @@ const links = [
 function Sidebar(){
     const [menuOpen, setOpen] = useState(false)
 
+    function Play(e){
+        const allMusic = document.querySelectorAll('.song-lists audio')
+
+        allMusic.forEach((audio) =>{
+            if(audio !== e.target){
+                audio.pause()
+                audio.currentTime = 0;
+            }
+        })
+    }
     return(
         <>
             <aside className={menuOpen ? 'sidebar open' : 'sidebar'}>
@@ -46,6 +56,38 @@ function Sidebar(){
                         </a>
                     ))}
                 </nav>
+
+
+                <div className='music'>
+                    <h1>Music</h1>
+                    <div className="song-lists">
+                        <div className="acdc">
+                             <div>
+                                <h2>ACDC</h2>
+                                <span>Highway to Hell</span>
+                                <audio controls src="/musics/Highway.mp3" onPlay={Play}></audio>
+                             </div>
+
+                             <div>
+                                <span>Back in Black</span>
+                                <audio controls src="/musics/Back.mp3" onPlay={Play}></audio>
+                             </div>
+
+                               <div>
+                                <span>Shoot to Thrill</span>
+                                <audio controls src="/musics/Shoot.mp3" onPlay={Play}></audio>
+                             </div>
+                        </div>
+
+                        <div className="taylor">
+                             
+                        </div>
+
+                        <div className="acdc">
+                           
+                        </div>
+                </div>
+                </div>
             </aside>
         </>
     )
